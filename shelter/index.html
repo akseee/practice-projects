@@ -15,24 +15,28 @@
   </head>
   <body>
     <header class="header">
-      <section class="header__container">
-        <div class="header__info">
-          <a>
-            <h1 class="header__title">
-              Cozy House
-              <span class="header__subtitle">Shelter for pets in Boston</span>
-            </h1>
-          </a>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="nav-list__item"><a href="#">About shelter</a></li>
-              <li class="nav-list__item"><a href="#">Our pets</a></li>
-              <li class="nav-list__item"><a href="#">Help the shelter</a></li>
-              <li class="nav-list__item"><a href="#">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__content">
+      <div class="header__info wrapper">
+        <a href="#">
+          <h1 class="header__title">
+            Cozy House
+            <span class="header__subtitle">Shelter for pets in Boston</span>
+          </h1>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="nav-list__item nav-list__item-inactive">
+              <a href="#">About the shelter</a>
+            </li>
+            <li class="nav-list__item"><a href="#">Our pets</a></li>
+            <li class="nav-list__item"><a href="#">Help the shelter</a></li>
+            <li class="nav-list__item"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__hero wrapper">
+        <article class="hero__content">
           <h2>Not only people need a house</h2>
           <p>
             We offer to give a chance to a little and nice puppy with an
@@ -40,14 +44,13 @@
             anybody else in the world, you will see!
           </p>
           <button class="button-colored">Make a friend</button>
-        </div>
+        </article>
+        <img src="./images/start-screen-puppy.png" width="698" height="728" />
       </section>
-    </header>
-    <main class="main">
-      <section class="main__about"></section>
-      <section class="main__pets"></section>
-      <section class="main__help"></section>
-      <section class="main__donations"></section>
+      <section class="main__about wrapper"></section>
+      <section class="main__pets wrapper"></section>
+      <section class="main__help wrapper"></section>
+      <section class="main__donations wrapper"></section>
     </main>
     <footer>
       <!-- adress -->
