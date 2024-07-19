@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--second-family);
+}
+
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family, "Georgia"), serif;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 6%;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 6%;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 6%;
+}
+
+p {
+  font-size: 15px;
+  line-height: 160%;
+}
+
+button {
+  border: 2px solid var(--accent-primary-light, #fddcc4);
+  border-radius: 100px;
+  padding: 15px 45px;
+  font-family: var(--font-family, "Georgia");
+  font-size: 17px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent-primary-light, #fddcc4);
+  background-color: var(--accent-primary-light, #fddcc4);
+}

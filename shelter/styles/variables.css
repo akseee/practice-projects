@@ -1,0 +1,24 @@
+:root {
+  --font-family: "Georgia", serif;
+  --second-family: "Arial", sans-serif;
+
+  --accent-primary: #f1cdb3;
+  --accent-primary-light: #fddcc4;
+
+  --color-primary-header: #545454;
+  --color-primary-paragraph: #4c4c4c;
+
+  --light-color-paragraph: #b2b2b2;
+  --link-underline: 3px solid var(----color-primary, #f1cdb3);
+
+  --start-screen-gradient-background: radial-gradient(
+    237.5% 111.8% at 0% 0%,
+    rgb(91, 72, 58) 0%,
+    rgb(38, 36, 37) 100%
+  );
+  --footer-gradient-background: radial-gradient(
+    549.89% 73.65% at 5.73% 50%,
+    rgb(81, 61, 47) 0%,
+    rgb(26, 26, 28) 100%
+  );
+}

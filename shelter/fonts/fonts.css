@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Arial Narrow";
-  src: url("./arial/ArialNarrow-Bold.woff2") format("woff2"),
-    url("./arial/ArialNarrow-Bold.woff") format("woff"),
-    url("./arial/ArialNarrow-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("./arial/ArialNarrow.woff2") format("woff2"),
+    url("./arial/ArialNarrow.woff") format("woff"),
+    url("./arial/ArialNarrow.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Arial Narrow";
-  src: url("./arial/ArialNarrow.woff2") format("woff2"),
-    url("./arial/ArialNarrow.woff") format("woff"),
-    url("./arial/ArialNarrow.ttf") format("truetype");
-  font-weight: normal;
+  src: url("./arial/ArialNarrow-Bold.woff2") format("woff2"),
+    url("./arial/ArialNarrow-Bold.woff") format("woff"),
+    url("./arial/ArialNarrow-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -87,11 +87,22 @@
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Georgia";
-  src: url("./arial/Georgia-BoldItalic.woff2") format("woff2"),
-    url("./arial/Georgia-BoldItalic.woff") format("woff"),
-    url("./arial/Georgia-BoldItalic.ttf") format("truetype");
+  src: url("./georgia/Georgia.woff2") format("woff2"),
+    url("./georgia/Georgia.woff") format("woff"),
+    url("./georgia/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("./georgia/Georgia-BoldItalic.woff2") format("woff2"),
+    url("./georgia/Georgia-BoldItalic.woff") format("woff"),
+    url("./georgia/Georgia-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -99,9 +110,9 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("./arial/Georgia-Bold.woff2") format("woff2"),
-    url("./arial/Georgia-Bold.woff") format("woff"),
-    url("./arial/Georgia-Bold.ttf") format("truetype");
+  src: url("./georgia/Georgia-Bold.woff2") format("woff2"),
+    url("./georgia/Georgia-Bold.woff") format("woff"),
+    url("./georgia/Georgia-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -109,20 +120,10 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("./arial/Georgia-Italic.woff2") format("woff2"),
-    url("./arial/Georgia-Italic.woff") format("woff"),
-    url("./arial/Georgia-Italic.ttf") format("truetype");
+  src: url("./georgia/Georgia-Italic.woff2") format("woff2"),
+    url("./georgia/Georgia-Italic.woff") format("woff"),
+    url("./georgia/Georgia-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Georgia";
-  src: url("./arial/Georgia.woff2") format("woff2"),
-    url("./arial/Georgia.woff") format("woff"),
-    url("./arial/Georgia.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
   font-display: swap;
 }
