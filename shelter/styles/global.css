@@ -52,6 +52,7 @@ a {
 
 h2 {
   font-size: 44px;
+  line-height: 130%;
 }
 
 h3 {
@@ -83,6 +84,7 @@ button {
   padding: 15px 45px;
   font-family: var(--font-family, "Georgia");
   font-size: 17px;
+  letter-spacing: 0.06em;
   background-color: transparent;
   cursor: pointer;
 }
@@ -95,4 +97,10 @@ button:hover {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 40px;
+}
+
+.button-colored {
+  border-color: var(--accent-primary);
+  background-color: var(--accent-primary);
 }
