@@ -24,7 +24,7 @@ ADD CORRECT LINKS*/
 
 .header__title {
   color: var(--accent-primary);
-  font-style: 32px;
+
   line-height: 110%;
   letter-spacing: 0.06em;
 }
@@ -274,17 +274,23 @@ ADD CORRECT LINKS*/
   flex-direction: column;
   gap: 20px;
   max-width: 380px;
+  color: #545454;
 }
+
+.donations__article svg {
+  width: 30px;
+  height: 23px;
+}
+
 .donations__title {
   margin-right: 80px;
-  color: #545454;
+
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
 .donations__bank {
-  color: #545454;
   font-weight: 400;
   font-size: 15px;
   line-height: 110%;
@@ -338,8 +344,18 @@ ADD CORRECT LINKS*/
   gap: 160px;
 }
 
+.contacts {
+  margin-top: 16px;
+  color: var(--accent-primary);
+  font-family: var(--font-family);
+  font-size: 20px;
+
+  letter-spacing: 0.06em;
+}
+
 .footer__title {
   margin-bottom: 40px;
+  padding: 0;
   color: #ffffff;
   font-weight: 400;
   font-size: 35px;
@@ -347,15 +363,31 @@ ADD CORRECT LINKS*/
   letter-spacing: 0.06em;
 }
 
-.footer__address {
+.address__contacts {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  color: var(--accent-primary);
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
+}
+
+.address__contacts svg {
+  width: 40px;
+  height: 32px;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.address-element {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-style: normal;
-  line-height: 115%;
-  letter-spacing: 0.06em;
+}
+
+.address__list-item svg {
+  min-width: 22px;
+  height: 32px;
 }
