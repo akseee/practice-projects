@@ -76,6 +76,8 @@
 
 .hero__title {
   margin-right: 150px;
+  font-size: 44px;
+  line-height: 130%;
 }
 
 .hero__text {
@@ -84,4 +86,29 @@
 
 .hero__button {
   width: fit-content;
+}
+
+.main__about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 430px;
+}
+
+.about__title {
+  margin-right: 60px;
+  color: #545454;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+.about__text {
+  color: #4c4c4c;
 }

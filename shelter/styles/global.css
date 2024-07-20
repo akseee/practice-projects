@@ -50,29 +50,6 @@ a {
   white-space: nowrap;
 }
 
-h2 {
-  font-size: 44px;
-  line-height: 130%;
-}
-
-h3 {
-  font-size: 35px;
-  line-height: 130%;
-  letter-spacing: 6%;
-}
-
-h4 {
-  font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 6%;
-}
-
-h5 {
-  font-size: 15px;
-  line-height: 110%;
-  letter-spacing: 6%;
-}
-
 p {
   font-size: 15px;
   line-height: 160%;
@@ -81,7 +58,7 @@ p {
 button {
   border: 2px solid var(--accent-primary-light, #fddcc4);
   border-radius: 100px;
-  padding: 15px 45px;
+  padding: 13px 43px;
   font-family: var(--font-family, "Georgia");
   font-size: 17px;
   letter-spacing: 0.06em;
@@ -98,6 +75,10 @@ button:hover {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.content {
+  margin: 80px 40px 100px;
 }
 
 .button-colored {
