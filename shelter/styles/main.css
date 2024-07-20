@@ -8,9 +8,8 @@ ADD CORRECT LINKS*/
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
   z-index: -1;
+  width: 100%;
   height: 908px;
   background: url("../images/noise_transparent@2x.png") repeat,
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
@@ -121,7 +120,18 @@ ADD CORRECT LINKS*/
 }
 
 .main__pets {
+  position: relative;
+}
+
+.main__pets::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  width: 150vw;
+  height: 100%;
   background-color: #f6f6f6;
+  transform: translateX(-50%);
 }
 
 .pets-content {
@@ -171,6 +181,11 @@ ADD CORRECT LINKS*/
   letter-spacing: 0.06em;
 }
 
+.slider-button svg {
+  width: 14px;
+  height: 6px;
+}
+
 .slider-button {
   width: 52px;
   height: 52px;
@@ -181,6 +196,7 @@ ADD CORRECT LINKS*/
 }
 .wrapper {
 }
+
 .help-content {
   display: flex;
   flex-direction: column;
@@ -199,19 +215,51 @@ ADD CORRECT LINKS*/
 }
 
 .help__list {
-  height: 281;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 55px 118px;
+  margin: 0 87px;
+}
+
+.help__list-item:nth-child(6) {
+  margin-left: 84px;
+}
+
+.help__list-item:nth-child(9) {
+  margin-right: 84px;
+}
+
+.help__list-item svg {
+  width: 60px;
+  height: 60px;
 }
 
 .help__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .help-item-title {
+  color: #545454;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
 }
 
-/* TODO HELP PART */
-
-.main__donations {
+.main__donations::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  width: 150vw;
+  height: 100%;
   background-color: #f6f6f6;
+  transform: translateX(-50%);
 }
 
 .donation-content {
