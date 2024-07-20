@@ -272,7 +272,7 @@ ADD CORRECT LINKS*/
 .donations__article {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   max-width: 380px;
 }
 .donations__title {
@@ -292,6 +292,8 @@ ADD CORRECT LINKS*/
 }
 
 .donations__bank-info {
+  display: flex;
+  gap: 15px;
   width: max-content;
   border-radius: 9px;
   padding: 10px 15px;
@@ -303,10 +305,6 @@ ADD CORRECT LINKS*/
   background-color: var(--accent-primary);
 }
 
-.donations__bank-card {
-  margin-left: 15px;
-}
-
 .donations__text {
   color: #b2b2b2;
   font-weight: 400;
@@ -314,4 +312,50 @@ ADD CORRECT LINKS*/
   font-style: italic;
   line-height: 150%;
 }
-/* ADD HOVER FOR BANK */
+
+.footer {
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  width: 150vw;
+  height: 100%;
+  background: url("../images/noise_transparent@2x.png") repeat,
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background-color: #f6f6f6;
+  transform: translateX(-50%);
+}
+.footer__content.content {
+  padding: 40px 40px 0;
+}
+
+.footer__content {
+  display: flex;
+  gap: 160px;
+}
+
+.footer__title {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--accent-primary);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
