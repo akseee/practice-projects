@@ -1,3 +1,9 @@
+/* TODO
+SVGS
+#545454 HEX TO VARIABLES
+HELP PART
+ADD CORRECT LINKS*/
+
 .header::before {
   content: "";
   position: absolute;
@@ -95,7 +101,7 @@
   gap: 120px;
 }
 
-.about__content {
+.about__article {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -109,6 +115,7 @@
   line-height: 130%;
   letter-spacing: 0.06em;
 }
+
 .about__text {
   color: #4c4c4c;
 }
@@ -133,18 +140,19 @@
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 .pets__slider {
   display: flex;
   align-items: center;
   gap: 53px;
 }
+
 .pets__list {
   display: flex;
   flex-direction: row;
   gap: 90px;
 }
-.slider__back-button {
-}
+
 .pets__list-item {
   background-color: #fff;
 }
@@ -168,3 +176,94 @@
   height: 52px;
   padding: 0;
 }
+
+.main__help {
+}
+.wrapper {
+}
+.help-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.help__title {
+  max-width: 310px;
+  color: #545454;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.help__list {
+  height: 281;
+}
+
+.help__list-item {
+}
+
+.help-item-title {
+}
+
+/* TODO HELP PART */
+
+.main__donations {
+  background-color: #f6f6f6;
+}
+
+.donation-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.donations__article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 380px;
+}
+.donations__title {
+  margin-right: 80px;
+  color: #545454;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+.donations__bank {
+  color: #545454;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.donations__bank-info {
+  width: max-content;
+  border-radius: 9px;
+  padding: 10px 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-primary);
+}
+
+.donations__bank-card {
+  margin-left: 15px;
+}
+
+.donations__text {
+  color: #b2b2b2;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 150%;
+}
+/* ADD HOVER FOR BANK */
