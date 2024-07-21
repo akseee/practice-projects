@@ -349,18 +349,28 @@ ADD CORRECT LINKS*/
   color: var(--accent-primary);
   font-family: var(--font-family);
   font-size: 20px;
-
   letter-spacing: 0.06em;
 }
 
+.cotnacts-centered {
+  margin-left: -18px;
+}
+
 .footer__title {
-  margin-bottom: 40px;
-  padding: 0;
+  margin: 0;
   color: #ffffff;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+
+.footer__title-questions {
+  margin-bottom: 38px;
+}
+
+.footer__title-visits {
+  margin-bottom: 33px;
 }
 
 .address__contacts {
@@ -383,7 +393,7 @@ ADD CORRECT LINKS*/
 .address-element {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   font-style: normal;
 }
 
