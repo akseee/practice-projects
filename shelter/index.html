@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="header__info wrapper">
-        <a href="#">
+        <a href="#!">
           <h1 class="header__title">
             Cozy House
             <span class="header__subtitle">Shelter for pets in Boston</span>
@@ -27,9 +27,11 @@
             <li class="nav-list__item nav-list__item-inactive">
               <a href="#">About the shelter</a>
             </li>
-            <li class="nav-list__item"><a href="#">Our pets</a></li>
-            <li class="nav-list__item"><a href="#">Help the shelter</a></li>
-            <li class="nav-list__item"><a href="#">Contacts</a></li>
+            <li class="nav-list__item">
+              <a href="/pages/pets.html">Our pets</a>
+            </li>
+            <li class="nav-list__item"><a href="#help">Help the shelter</a></li>
+            <li class="nav-list__item"><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -44,7 +46,9 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button class="hero__button button-colored">Make a friend</button>
+            <a class="button hero__button button-colored" href="#friends">
+              Make a friend
+            </a>
           </article>
           <img
             src="./images/start-screen-puppy.png"
@@ -83,16 +87,16 @@
         </div>
       </section>
 
-      <section class="main__pets wrapper">
+      <section class="main__pets wrapper" id="friends">
         <div class="pets-content content">
           <h2 class="pets__title">
             Our friends who <br />are looking for a house
           </h2>
           <div class="pets__slider">
-            <button class="slider-button slider__back-button">
-              <!-- <svg viewBox="0 0 14 6">
+            <button class="button slider-button slider__back-button">
+              <svg viewBox="0 0 14 6">
                 <use href="./images/svg/arror-left.svg#arrow-left">
-              </svg> -->
+              </svg>
             </button>
             <ul class="pets__list">
               <li class="pets__list-item">
@@ -104,7 +108,7 @@
                     height="270"
                   />
                   <h3 class="pets-item-title">Katrine</h3>
-                  <button class="pets-item-button">Learn more</button>
+                  <button class="button pets-item-button">Learn more</button>
                 </article>
               </li>
               <li class="pets__list-item">
@@ -116,7 +120,7 @@
                     height="270"
                   />
                   <h3 class="pets-item-title">Jennifer</h3>
-                  <button class="pets-item-button">Learn more</button>
+                  <button class="button pets-item-button">Learn more</button>
                 </article>
               </li>
               <li class="pets__list-item">
@@ -128,26 +132,25 @@
                     height="270"
                   />
                   <h3 class="pets-item-title">Woody</h3>
-                  <button class="pets-item-button">Learn more</button>
+                  <button class="button pets-item-button">Learn more</button>
                 </article>
               </li>
             </ul>
-            <button class="slider-button slider__forward-button">
-              <!-- <svg viewBox="0 0 14 6">
+            <button class="button slider-button slider__forward-button">
+              <svg viewBox="0 0 14 6">
                 <use href="./images/svg/arror-right.svg#arrow-right">
-              </svg> -->
+              </svg>
             </button>
           </div>
-          <button class="pets__button button-colored">
+          <a class="button pets__button button-colored" href="./pages/pets.html">
             Get to know the rest
-          </button>
+          </a>
         </div>
       </section>
 
-      <section class="main__help wrapper">
+      <section class="main__help wrapper" id="help">
         <div class="help-content content">
           <h2 class="help__title">How you can help <br />our shelter</h2>
-
           <ul class="help__list">
             <li class="help__list-item">
               <svg viewBox="0 0 48 60">
@@ -217,7 +220,7 @@
             <h3 class="donations__bank">
               Name of the bank / Type of bank account
             </h3>
-            <a href="#" class="donations__bank-info">
+            <a href="#!" class="donations__bank-info">
               <svg viewBox="0 0 30 23">
                 <use href="./images/svg/credit-card.svg#credit-card" />
               </svg>
@@ -236,13 +239,12 @@
       </section>
     </main>
 
-    <footer class="footer wrapper">
+    <footer class="footer wrapper" id="footer">
       <div class="footer__content content">
         <div class="contacts">
           <h3 class="footer__title footer__title-questions">
             For questions and suggestions
           </h3>
-
           <address class="address__contacts">
             <a class="address-element" href="mailto:email@shelter.com">
               <svg viewBox="0 0 40 26">
@@ -258,15 +260,13 @@
             >
           </address>
         </div>
-
-        <div class="contacts cotnacts-centered">
+        <div class="contacts contact-centered">
           <h3 class="footer__title footer__title-visits">
             We are waiting for your visit
           </h3>
-
           <ul class="address__list">
             <li class="address__list-item">
-              <a class="address-element" href="">
+              <a class="address-element" href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111" target="_blank">
                 <svg viewBox="0 0 22 32">
                   <use href="./images/svg/pin.svg#pin" />
                 </svg>
@@ -274,7 +274,7 @@
               </a>
             </li>
             <li class="address__list-item">
-              <a class="address-element" href="">
+              <a class="address-element" href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111" target="_blank">
                 <svg viewBox="0 0 22 32">
                   <use href="./images/svg/pin.svg#pin" />
                 </svg>

@@ -1,8 +1,5 @@
 /* TODO
-SVGS
-#545454 HEX TO VARIABLES
-HELP PART
-ADD CORRECT LINKS*/
+#545454 HEX TO VARIABLES*/
 
 .header::before {
   content: "";
@@ -24,7 +21,6 @@ ADD CORRECT LINKS*/
 
 .header__title {
   color: var(--accent-primary);
-
   line-height: 110%;
   letter-spacing: 0.06em;
 }
@@ -49,6 +45,13 @@ ADD CORRECT LINKS*/
 .header__nav-list {
   display: flex;
   gap: 35px;
+}
+
+.nav-list__item {
+  text-decoration: none;
+  text-decoration: underline 3px solid transparent;
+  text-underline-offset: 8px;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-list__item-inactive {
@@ -91,6 +94,7 @@ ADD CORRECT LINKS*/
 
 .hero__button {
   width: fit-content;
+  color: #292929;
 }
 
 .about-content {
@@ -165,6 +169,17 @@ ADD CORRECT LINKS*/
 
 .pets__list-item {
   background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.pets__list-item:hover {
+  box-shadow: 0 0 20px var(--accent-primary-light);
+  transform: scale(1.2);
+}
+
+.pets__list-item:hover .pets-item-title {
+  color: var(--accent-primary);
+  letter-spacing: 0.3em;
 }
 
 .pets-article {
@@ -179,6 +194,7 @@ ADD CORRECT LINKS*/
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.06em;
+  transition: all 0.5s ease-in-out;
 }
 
 .slider-button svg {
@@ -190,11 +206,6 @@ ADD CORRECT LINKS*/
   width: 52px;
   height: 52px;
   padding: 0;
-}
-
-.main__help {
-}
-.wrapper {
 }
 
 .help-content {
@@ -234,6 +245,7 @@ ADD CORRECT LINKS*/
 .help__list-item svg {
   width: 60px;
   height: 60px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .help__list-item {
@@ -243,12 +255,21 @@ ADD CORRECT LINKS*/
   gap: 30px;
 }
 
+.help__list-item:hover svg {
+  transform: rotate(360deg);
+}
+
+.help__list-item:hover .help-item-title {
+  color: #000000;
+}
+
 .help-item-title {
   color: #545454;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
+  transition: all 0.5s ease-in-out;
 }
 
 .main__donations::before {
@@ -352,7 +373,7 @@ ADD CORRECT LINKS*/
   letter-spacing: 0.06em;
 }
 
-.cotnacts-centered {
+.contact-centered {
   margin-left: -18px;
 }
 
@@ -400,4 +421,12 @@ ADD CORRECT LINKS*/
 .address__list-item svg {
   min-width: 22px;
   height: 32px;
+}
+
+.contacts a {
+  background-color: transparent;
+}
+
+.contacts a:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
