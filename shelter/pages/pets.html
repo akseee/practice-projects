@@ -10,13 +10,12 @@
     <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="../images/favicon.png" />
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/pets.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__info wrapper">
-        <a href="#">
+        <a href="../index.html">
           <h1 class="header__title">
             Cozy House
             <span class="header__subtitle">Shelter for pets in Boston</span>
@@ -24,17 +23,235 @@
         </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="nav-list__item ">
+            <li class="nav-list__item">
               <a href="../index.html">About the shelter</a>
             </li>
-            <li class="nav-list__item nav-list__item-inactive ">
+            <li class="nav-list__item nav-list__item-inactive">
               <a href="#">Our pets</a>
             </li>
-            <li class="nav-list__item"><a href="#">Help the shelter</a></li>
-            <li class="nav-list__item"><a href="#">Contacts</a></li>
+            <li class="nav-list__item">
+              <a href="../index.html#help">Help the shelter</a>
+            </li>
+            <li class="nav-list__item"><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
-  <body></body>
+    <main>
+      <section class="main__pets wrapper" id="pets">
+        <div class="pets-content content">
+          <h2 class="pets__title">
+            Our friends who <br />are looking for a house
+          </h2>
+          <ul class="pets__list">
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-katrine.png"
+                  alt="image of cat katrine"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Katrine</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-jennifer.png"
+                  alt="image of dog Jennifer"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Jennifer</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-woody.png"
+                  alt="image of dog Woody"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Woody</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-sophie.png"
+                  alt="image of dog Sophie"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Sophia</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-timmy.png"
+                  alt="image of cat Timmy"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Timmy</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-charly.png"
+                  alt="image of dog Charly"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Charly</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-scarlet.png"
+                  alt="image of dog Scarlett"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Scarlett</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+            <li class="pets__list-item">
+              <article class="pets-article">
+                <img
+                  src="../images/pets-freddie.png"
+                  alt="image of dog Freddie"
+                  width="270"
+                  height="270"
+                />
+                <h3 class="pets-item-title">Freddie</h3>
+                <button class="button pets-item-button">Learn more</button>
+              </article>
+            </li>
+          </ul>
+          <ul class="pets__pagination-list">
+            <li class="pagination__list-item">
+              <button
+                class="pagination-button double-arrow pagination__back-button"
+                disabled
+              >
+                <svg viewBox="0 0 25 11">
+                  <use
+                    href="../images/svg/double-back-arrow.svg#double-back-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pagination__list-item">
+              <button
+                class="pagination-button single-arrow pagination__back-button"
+                disabled
+              >
+                <svg viewBox="0 0 10 11">
+                  <use href="../images/svg/back-arrow.svg#back-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pagination__list-item">
+              <button
+                class="pagination-button pagination__current-button pagination-active"
+              >
+                1
+              </button>
+            </li>
+            <li class="pagination__list-item">
+              <button
+                class="pagination-button single-arrow pagination__forward-button"
+              >
+                <svg viewBox="0 0 10 11">
+                  <use
+                    href="../images/svg/forward-arrow.svg#forward-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pagination__list-item">
+              <button
+                class="pagination-button double-arrow pagination__forward-button"
+              >
+                <svg viewBox="0 0 25 11">
+                  <use
+                    href="../images/svg/double-forward-arrow.svg#double-forward-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrapper" id="footer">
+      <div class="footer__content content">
+        <div class="contacts">
+          <h3 class="footer__title footer__title-questions">
+            For questions and suggestions
+          </h3>
+          <address class="address__contacts">
+            <a class="address-element" href="mailto:email@shelter.com">
+              <svg viewBox="0 0 40 26">
+                <use href="../images/svg/mail.svg#mail" />
+              </svg>
+              <span class="address">email@shelter.com</span></a
+            >
+            <a class="address-element" href="tel:+13-674-567-75-54">
+              <svg viewBox="0 0 40 32">
+                <use href="../images/svg/phone.svg#phone" />
+              </svg>
+              <span class="address">+13 674 567 75 54</span></a
+            >
+          </address>
+        </div>
+        <div class="contacts contact-centered">
+          <h3 class="footer__title footer__title-visits">
+            We are waiting for your visit
+          </h3>
+          <ul class="address__list">
+            <li class="address__list-item">
+              <a
+                class="address-element"
+                href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+              >
+                <svg viewBox="0 0 22 32">
+                  <use href="../images/svg/pin.svg#pin" />
+                </svg>
+                1 Central Street, Boston (entrance from the store)
+              </a>
+            </li>
+            <li class="address__list-item">
+              <a
+                class="address-element"
+                href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+              >
+                <svg viewBox="0 0 22 32">
+                  <use href="../images/svg/pin.svg#pin" />
+                </svg>
+                18 South Park, London</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <img src="../images/footer-puppy.png" alt="picture of a dog" />
+      </div>
+    </footer>
+  </body>
 </html>

@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/pets.css" />
   </head>
   <body>
     <header class="header">
@@ -37,7 +36,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__hero wrapper">
+      <div class="main__hero wrapper">
         <div class="hero-content">
           <article class="hero__article">
             <h2 class="hero__title">Not only people need a house</h2>
@@ -57,9 +56,8 @@
             height="728"
           />
         </div>
-      </section>
-
-      <section class="main__about wrapper">
+      </div>
+      <div class="main__about wrapper">
         <div class="about-content content">
           <img
             src="./images/about-pets.png"
@@ -85,8 +83,7 @@
             </p>
           </article>
         </div>
-      </section>
-
+      </div>
       <section class="main__pets wrapper" id="friends">
         <div class="pets-content content">
           <h2 class="pets__title">
@@ -95,7 +92,7 @@
           <div class="pets__slider">
             <button class="button slider-button slider__back-button">
               <svg viewBox="0 0 14 6">
-                <use href="./images/svg/arror-left.svg#arrow-left">
+                <use href="./images/svg/arror-left.svg#arrow-left"></use>
               </svg>
             </button>
             <ul class="pets__list">
@@ -138,59 +135,65 @@
             </ul>
             <button class="button slider-button slider__forward-button">
               <svg viewBox="0 0 14 6">
-                <use href="./images/svg/arror-right.svg#arrow-right">
+                <use href="./images/svg/arror-right.svg#arrow-right"></use>
               </svg>
             </button>
           </div>
-          <a class="button pets__button button-colored" href="./pages/pets.html">
+          <a
+            class="button pets__button button-colored"
+            href="./pages/pets.html"
+          >
             Get to know the rest
           </a>
         </div>
       </section>
-
       <section class="main__help wrapper" id="help">
         <div class="help-content content">
           <h2 class="help__title">How you can help <br />our shelter</h2>
           <ul class="help__list">
             <li class="help__list-item">
               <svg viewBox="0 0 48 60">
-                <use href="./images/svg/pet-food.svg#pets-food" />
+                <use href="./images/svg/pet-food.svg#pets-food"></use>
               </svg>
               <h3 class="help-item-title">Pet-food</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 61 60">
-                <use href="./images/svg/transportation.svg#transportation" />
+                <use
+                  href="./images/svg/transportation.svg#transportation"
+                ></use>
               </svg>
               <h3 class="help-item-title">Transportation</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 60 60">
-                <use href="./images/svg/toys.svg#toys" />
+                <use href="./images/svg/toys.svg#toys"></use>
               </svg>
               <h3 class="help-item-title">Toys</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 60 57">
-                <use href="./images/svg/bowls-and-cups.svg#bowls-and-cups" />
+                <use
+                  href="./images/svg/bowls-and-cups.svg#bowls-and-cups"
+                ></use>
               </svg>
               <h3 class="help-item-title">Bowls and cups</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 32 60">
-                <use href="./images/svg/shampoos.svg#shampoos" />
+                <use href="./images/svg/shampoos.svg#shampoos"></use>
               </svg>
               <h3 class="help-item-title">Shampoos</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 60 55">
-                <use href="./images/svg/vitamins.svg#vitamins" />
+                <use href="./images/svg/vitamins.svg#vitamins"></use>
               </svg>
               <h3 class="help-item-title">Vitamins</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 60 60">
-                <use href="./images/svg/medicines.svg#medicines" />
+                <use href="./images/svg/medicines.svg#medicines"></use>
               </svg>
               <h3 class="help-item-title">Medicine</h3>
             </li>
@@ -198,21 +201,20 @@
               <svg viewBox="0 0 60 53">
                 <use
                   href="./images/svg/collars-or-leashes.svg#collars-or-leashes"
-                />
+                ></use>
               </svg>
               <h3 class="help-item-title">Collars / leashes</h3>
             </li>
             <li class="help__list-item">
               <svg viewBox="0 0 57 60">
-                <use href="./images/svg/sleeping-area.svg#sleeping-area" />
+                <use href="./images/svg/sleeping-area.svg#sleeping-area"></use>
               </svg>
               <h3 class="help-item-title">Sleeping areas</h3>
             </li>
           </ul>
         </div>
       </section>
-
-      <section class="main__donations wrapper">
+      <div class="main__donations wrapper">
         <div class="donation-content content">
           <img src="./images/donation-dog.png" alt="image of a dog" />
           <article class="donations__article">
@@ -222,7 +224,7 @@
             </h3>
             <a href="#!" class="donations__bank-info">
               <svg viewBox="0 0 30 23">
-                <use href="./images/svg/credit-card.svg#credit-card" />
+                <use href="./images/svg/credit-card.svg#credit-card"></use>
               </svg>
               <span class="donations__bank-card"
                 >8380 2880 8028 8791 7435</span
@@ -236,9 +238,8 @@
             </p>
           </article>
         </div>
-      </section>
+      </div>
     </main>
-
     <footer class="footer wrapper" id="footer">
       <div class="footer__content content">
         <div class="contacts">
@@ -248,13 +249,13 @@
           <address class="address__contacts">
             <a class="address-element" href="mailto:email@shelter.com">
               <svg viewBox="0 0 40 26">
-                <use href="./images/svg/mail.svg#mail" />
+                <use href="./images/svg/mail.svg#mail"></use>
               </svg>
               <span class="address">email@shelter.com</span></a
             >
             <a class="address-element" href="tel:+13-674-567-75-54">
               <svg viewBox="0 0 40 32">
-                <use href="./images/svg/phone.svg#phone" />
+                <use href="./images/svg/phone.svg#phone"></use>
               </svg>
               <span class="address">+13 674 567 75 54</span></a
             >
@@ -266,24 +267,31 @@
           </h3>
           <ul class="address__list">
             <li class="address__list-item">
-              <a class="address-element" href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111" target="_blank">
+              <a
+                class="address-element"
+                href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+              >
                 <svg viewBox="0 0 22 32">
-                  <use href="./images/svg/pin.svg#pin" />
+                  <use href="./images/svg/pin.svg#pin"></use>
                 </svg>
                 1 Central Street, Boston (entrance from the store)
               </a>
             </li>
             <li class="address__list-item">
-              <a class="address-element" href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111" target="_blank">
+              <a
+                class="address-element"
+                href="https://www.google.com/maps/place/1+Central+St,+Manchester+M2+5WR,+UK/data=!4m2!3m1!1s0x487bb1c216961535:0xc1551b68a0371bae?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+              >
                 <svg viewBox="0 0 22 32">
-                  <use href="./images/svg/pin.svg#pin" />
+                  <use href="./images/svg/pin.svg#pin"></use>
                 </svg>
                 18 South Park, London</a
               >
             </li>
           </ul>
         </div>
-
         <img src="./images/footer-puppy.png" alt="picture of a dog" />
       </div>
     </footer>
