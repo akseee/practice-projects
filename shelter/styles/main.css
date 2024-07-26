@@ -45,19 +45,20 @@
 .header__nav-list {
   display: flex;
   gap: 35px;
+  margin-top: -5px;
 }
 
 .nav-list__item {
   text-decoration: none;
   text-decoration: underline 3px solid transparent;
-  text-underline-offset: 8px;
+  text-underline-offset: 7px;
   transition: all 0.5s ease-in-out;
 }
 
 .nav-list__item-inactive {
   color: #fafafa;
   text-decoration: underline 3px solid var(--accent-primary);
-  text-underline-offset: 8px;
+  text-underline-offset: 7px;
   cursor: default;
   pointer-events: none;
 }
@@ -65,7 +66,7 @@
 .nav-list__item:hover {
   color: #fafafa;
   text-decoration: underline 3px solid var(--accent-primary);
-  text-underline-offset: 8px;
+  text-underline-offset: 7px;
 }
 
 .hero-content {
@@ -174,12 +175,11 @@
 
 .pets__list-item:hover {
   box-shadow: 0 0 20px var(--accent-primary-light);
-  transform: scale(1.2);
 }
 
-.pets__list-item:hover .pets-item-title {
-  color: var(--accent-primary);
-  letter-spacing: 0.3em;
+.pets__list-item:hover .pets-item-button {
+  border-color: var(--accent-primary-light, #fddcc4);
+  background-color: var(--accent-primary-light, #fddcc4);
 }
 
 .pets-article {
@@ -194,7 +194,6 @@
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.06em;
-  transition: all 0.5s ease-in-out;
 }
 
 .slider-button svg {
@@ -228,7 +227,8 @@
 .help__list {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
   justify-content: space-between;
   gap: 55px 118px;
   margin: 0 87px;
@@ -239,13 +239,12 @@
 }
 
 .help__list-item:nth-child(9) {
-  margin-right: 84px;
+  margin-right: 82px;
 }
 
 .help__list-item svg {
   width: 60px;
   height: 60px;
-  transition: transform 0.3s ease-in-out;
 }
 
 .help__list-item {
@@ -253,10 +252,6 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-}
-
-.help__list-item:hover svg {
-  transform: rotate(360deg);
 }
 
 .help__list-item:hover .help-item-title {
@@ -269,7 +264,6 @@
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  transition: all 0.5s ease-in-out;
 }
 
 .main__donations::before {
@@ -283,6 +277,9 @@
   transform: translateX(-50%);
 }
 
+.donation-content.content {
+  padding: 79px 40px 99px;
+}
 .donation-content {
   display: flex;
   justify-content: center;
@@ -391,7 +388,8 @@
 }
 
 .footer__title-visits {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
+  padding-left: 1px;
 }
 
 .address__contacts {
