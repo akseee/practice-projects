@@ -52,7 +52,7 @@
   text-decoration: none;
   text-decoration: underline 3px solid transparent;
   text-underline-offset: 7px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-list__item-inactive {
@@ -170,7 +170,7 @@
 
 .pets__list-item {
   background-color: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .pets__list-item:hover {
@@ -423,8 +423,4 @@
 
 .contacts a {
   background-color: transparent;
-}
-
-.contacts a:hover {
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
