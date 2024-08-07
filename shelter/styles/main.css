@@ -227,17 +227,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 1;
-  justify-content: space-between;
+  justify-content: center;
   gap: 55px 118px;
   margin: 0 87px;
-}
-
-.help__list-item:nth-child(6) {
-  margin-left: 84px;
-}
-
-.help__list-item:nth-child(9) {
-  margin-right: 82px;
 }
 
 .help__list-item svg {
