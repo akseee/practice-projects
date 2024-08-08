@@ -11,6 +11,7 @@
   background: url("../images/noise_transparent@2x.png") repeat,
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
+
 .header__info.content {
   padding: 30px 40px 0;
 }
