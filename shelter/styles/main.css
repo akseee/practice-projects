@@ -430,9 +430,6 @@
     width: 310px;
   }
 
-  .hero__text {
-  }
-
   .hero__article {
     gap: 42px;
     margin: 0 124px 0;
@@ -446,32 +443,11 @@
     flex-direction: column-reverse;
     gap: 80px;
   }
-  .content {
-  }
-  .about__article {
-  }
-  .about__title {
-  }
-  .about__text {
-  }
 
-  .main__pets {
-  }
-  .pets-content {
-  }
-  .content {
-  }
-  .pets__title {
-  }
   .pets__slider {
     gap: 12px;
   }
-  .button {
-  }
-  .slider-button {
-  }
-  .slider__back-button {
-  }
+
   .pets__list {
     gap: 40px;
   }
@@ -479,28 +455,9 @@
   .pets__list-item:nth-child(3) {
     display: none;
   }
-  .pets__list-item {
-  }
-  .pets-article {
-  }
-  .pets-item-title {
-  }
-  .pets-item-button {
-  }
-  .slider__forward-button {
-  }
-  .pets__button {
-  }
-  .button-colored {
-  }
 
-  /* help */
-  .main__help {
-  }
   .help-content.content {
     padding: 80px 70px;
-  }
-  .help__title {
   }
 
   .help__list {
@@ -513,20 +470,15 @@
   .help__list-item {
     min-width: 170px;
   }
-  .help-item-title {
-  }
 
-  /* donations */
-  .main__donations {
-  }
   .donation-content {
     flex-direction: column-reverse;
     gap: 60px;
   }
   .donation-content.content {
-    padding: 100px 132px;
+    padding: 99px 132px;
   }
-  /* footer */
+
   .footer__content.content {
     padding: 30px 64px 0;
   }
@@ -546,27 +498,18 @@
     margin-bottom: 0;
     padding-left: 0;
   }
+
   .footer__content img {
     width: 300px;
     height: 310px;
   }
-  .footer__title-questions {
-  }
-  .address__contacts {
-  }
-  .address-element {
-  }
-  .address {
-  }
+
   .contacts {
     margin-top: 0;
   }
+
   .footer__title-visits {
     margin-bottom: 33px;
-  }
-  .address__list {
-  }
-  .address__list-item {
   }
 }
 
