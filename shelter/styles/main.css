@@ -396,3 +396,175 @@
 .contacts a {
   background-color: transparent;
 }
+
+@media (width < 1280px) {
+  body {
+    background-color: red;
+  }
+
+  .header::before {
+    height: 1165px;
+  }
+
+  .header__info.content {
+    padding: 30px 30px 0;
+  }
+
+  .content {
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .hero-content img {
+    align-self: end;
+    width: 569px;
+    height: 593px;
+  }
+  .content {
+    max-width: 768px;
+    /* margin: 0 auto; */
+    /* padding: 80px 40px 100px; */
+  }
+  .hero__title {
+    width: 310px;
+  }
+
+  .hero__text {
+  }
+
+  .hero__article {
+    gap: 42px;
+    margin: 0 124px 0;
+  }
+
+  .hero__button {
+    align-self: center;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+  .content {
+  }
+  .about__article {
+  }
+  .about__title {
+  }
+  .about__text {
+  }
+
+  .main__pets {
+  }
+  .pets-content {
+  }
+  .content {
+  }
+  .pets__title {
+  }
+  .pets__slider {
+    gap: 12px;
+  }
+  .button {
+  }
+  .slider-button {
+  }
+  .slider__back-button {
+  }
+  .pets__list {
+    gap: 40px;
+  }
+
+  .pets__list-item:nth-child(3) {
+    display: none;
+  }
+  .pets__list-item {
+  }
+  .pets-article {
+  }
+  .pets-item-title {
+  }
+  .pets-item-button {
+  }
+  .slider__forward-button {
+  }
+  .pets__button {
+  }
+  .button-colored {
+  }
+
+  /* help */
+  .main__help {
+  }
+  .help-content {
+  }
+  .content {
+  }
+  .help__title {
+  }
+  .help__list {
+    gap: 55px 60px;
+    margin: 0 40px;
+  }
+  .help__list-item {
+  }
+  .help-item-title {
+  }
+  /* donations */
+  .main__donations {
+  }
+  .donation-content {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  /* footer */
+  .footer__content.content {
+    padding: 30px 64px 0;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+  }
+
+  .footer__details {
+    display: flex;
+    gap: 60px;
+  }
+
+  .footer__title-visits {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .footer__content img {
+    width: 300px;
+    height: 310px;
+  }
+  .footer__title-questions {
+  }
+  .address__contacts {
+  }
+  .address-element {
+  }
+  .address {
+  }
+  .contact-centered {
+  }
+  .footer__title-visits {
+  }
+  .address__list {
+  }
+  .address__list-item {
+  }
+}
+
+@media (width < 768px) {
+  body {
+    background-color: blue;
+  }
+}
