@@ -59,12 +59,9 @@ p {
   line-height: 160%;
 }
 
-.wrapper {
+.content {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.content {
   padding: 80px 40px 100px;
 }
 
