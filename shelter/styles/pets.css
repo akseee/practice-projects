@@ -177,6 +177,11 @@
   gap: 160px;
 }
 
+.footer__details {
+  display: flex;
+  gap: 160px;
+}
+
 .contacts {
   margin-top: 16px;
   color: var(--accent-primary);
