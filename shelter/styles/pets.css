@@ -28,6 +28,9 @@
   font-size: 15px;
 }
 
+.header__burger {
+  display: none;
+}
 .header__nav-list {
   display: flex;
   gap: 35px;
