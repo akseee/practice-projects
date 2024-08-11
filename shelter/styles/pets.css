@@ -236,3 +236,78 @@
 .contacts a {
   background-color: transparent;
 }
+
+@media (width < 1280px) {
+  .content {
+    max-width: 768px;
+  }
+
+  .header__info.content {
+    padding: 30px;
+  }
+
+  .header__info {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .pets-content {
+    gap: 30px;
+  }
+
+  .pets-content.content {
+    gap: 30px;
+    padding-bottom: 75px;
+  }
+
+  .pets__list {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .pets__list-item:nth-child(7) {
+    display: none;
+  }
+  .pets__list-item:nth-child(8) {
+    display: none;
+  }
+
+  .footer__content.content {
+    padding: 30px 64px 0;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+  }
+
+  .footer__details {
+    display: flex;
+    gap: 60px;
+  }
+
+  .footer__title-visits {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .footer__content img {
+    width: 300px;
+    height: 310px;
+  }
+
+  .contacts {
+    margin-top: 0;
+  }
+
+  .footer__title-visits {
+    margin-bottom: 33px;
+  }
+}
+
+@media (width < 768px) {
+  body {
+    background-color: blue;
+  }
+}
