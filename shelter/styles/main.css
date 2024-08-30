@@ -635,19 +635,18 @@
   }
 
   .pets__slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 80px;
   }
 
-  .slider__back-button {
-    /* order: 4; */
+  .pets__list {
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
   }
 
-  .slider__forward-button {
-    /* order: 3; */
+  .slider__back-button {
+    justify-self: flex-end;
   }
 
   .pets__list-item:nth-child(2) {
