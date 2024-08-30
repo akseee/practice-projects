@@ -62,17 +62,6 @@
   transition: all 0.3s;
 }
 
-.header__burger-active {
-  transform: rotate(90deg);
-}
-
-.header___sidebar-menu__nav-list {
-}
-.sidebar__nav-list__item {
-}
-.sidebar__nav-list__item-inactive {
-}
-
 .header__nav {
   color: #cdcdcd;
   font-size: 15px;
@@ -565,22 +554,32 @@
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     gap: 173px;
     width: 320px;
     padding: 248px 20px 0;
     color: #cdcdcd;
     background: #292929;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(320px);
+  }
+
+  .header__sidebar-menu.active {
+    transform: translateX(0);
   }
 
   .header__burger {
-    z-index: 2;
+    z-index: 3;
     display: block;
     text-align: end;
   }
 
   .header__burger:hover {
     cursor: pointer;
+  }
+
+  .header__burger.active {
+    transform: rotate(90deg);
   }
 
   .header__nav-list {

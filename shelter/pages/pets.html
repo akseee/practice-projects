@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles/pets.css" />
   </head>
   <body>
+    <div class="overlay visually-hidden" id="overlay"></div>
     <header class="header">
       <div class="header__info content">
         <a href="../index.html">
@@ -35,11 +36,27 @@
             <li class="nav-list__item"><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
-        <button class="header__burger">
+        <button class="header__burger" id="burger-icon">
           <svg viewBox="0 0 30 22">
             <use href="../images/svg/light-Burger.svg#light-burger"></use>
           </svg>
         </button>
+        <div class="header__sidebar-menu visually-hidden">
+          <nav class="header-menu__nav">
+            <ul class="header__nav-list">
+              <li class="nav-list__item">
+                <a href="../index.html">About the shelter</a>
+              </li>
+              <li class="nav-list__item nav-list__item-inactive">
+                <a href="#">Our pets</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="../index.html#help">Help the shelter</a>
+              </li>
+              <li class="nav-list__item"><a href="#footer">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -259,5 +276,6 @@
         <img src="../images/footer-puppy.png" alt="picture of a dog" />
       </div>
     </footer>
+    <script src="../scripts/burger-menu.js"></script>
   </body>
 </html>
