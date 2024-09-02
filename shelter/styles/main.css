@@ -196,6 +196,7 @@
 
 .pets__list-item:hover {
   box-shadow: 0 0 20px var(--accent-primary-light);
+  cursor: pointer;
 }
 
 .pets__list-item:hover .pets-item-button {
