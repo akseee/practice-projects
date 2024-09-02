@@ -1,3 +1,22 @@
+function petsTemplate(img, alt, title) {
+  const cardTemplate = document.querySelector("#pets__item-template").content
+  const card = document.querySelector(".pets__list")
+
+  const cardElement = cardTemplate
+    .querySelector(".pets__list-item")
+    .cloneNode(true)
+
+  cardElement.querySelector(".pets-image").src = img
+  cardElement.querySelector(".pets-image").alt = alt
+  cardElement.querySelector(".pets-item-title").textContent = title
+
+  return card.append(cardElement)
+}
+
+petsTemplate("./images/pets-katrine.png", "Katrine", "Katrine")
+petsTemplate("./images/pets-katrine.png", "Katrine", "Katrine")
+petsTemplate("./images/pets-katrine.png", "Katrine", "Katrine")
+
 const pets = [
   {
     name: "Jennifer",
