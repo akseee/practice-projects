@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="../images/favicon.png" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/pets.css" />
+    <link rel="stylesheet" href="../styles/popup.css" />
   </head>
   <body>
     <div class="overlay visually-hidden" id="overlay"></div>
@@ -65,104 +66,7 @@
           <h2 class="pets__title">
             Our friends who <br />are looking for a house
           </h2>
-          <ul class="pets__list">
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-katrine.png"
-                  alt="image of cat katrine"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Katrine</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-jennifer.png"
-                  alt="image of dog Jennifer"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Jennifer</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-woody.png"
-                  alt="image of dog Woody"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Woody</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-sophie.png"
-                  alt="image of dog Sophie"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Sophia</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-timmy.png"
-                  alt="image of cat Timmy"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Timmy</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-charly.png"
-                  alt="image of dog Charly"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Charly</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-scarlet.png"
-                  alt="image of dog Scarlett"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Scarlett</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-            <li class="pets__list-item">
-              <article class="pets-article">
-                <img
-                  src="../images/pets-freddie.png"
-                  alt="image of dog Freddie"
-                  width="270"
-                  height="270"
-                />
-                <h3 class="pets-item-title">Freddie</h3>
-                <button class="button pets-item-button">Learn more</button>
-              </article>
-            </li>
-          </ul>
+          <ul class="pets__list"></ul>
           <ul class="pets__pagination-list">
             <li class="pagination__list-item">
               <button
@@ -276,6 +180,54 @@
         <img src="../images/footer-puppy.png" alt="picture of a dog" />
       </div>
     </footer>
+
+    <template id="pets-template">
+      <li class="pets__list-item">
+        <article class="pets-article">
+          <img class="pets-image" src="" alt="" width="270" height="270" />
+          <h3 class="pets-item-title"></h3>
+          <button class="button pets-item-button">Learn more</button>
+        </article>
+      </li>
+    </template>
+
+    <div class="popup popup__type_card">
+      <div class="popup__container">
+        <button class="popup__close-btn button">
+          <svg viewBox="0 0 12 12">
+            <use href="../images/svg/Vector.svg#Vector"></use>
+          </svg>
+        </button>
+        <img class="popup__image" src="" alt="" />
+        <div class="popup__info">
+          <div class="popup__header">
+            <h2 class="popup__name"></h2>
+            <h3 class="popup__type"></h3>
+          </div>
+          <p class="popup__description"></p>
+          <ul class="popup__list">
+            <li class="popup__list-item">
+              <strong>Age</strong>: <span class="popup-age"></span>
+            </li>
+            <li class="popup__list-item">
+              <strong>Inoculations:</strong>
+              <span class="popup-inoculations"></span>
+            </li>
+            <li class="popup__list-item">
+              <strong>Diseases:</strong>
+              <span class="popup-diaseases"></span>
+            </li>
+            <li class="popup__list-item">
+              <strong>Parasites:</strong> <span class="popup-parasites"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/pets-list.js"></script>
     <script src="../scripts/burger-menu.js"></script>
+    <script src="../scripts/pets-main.js"></script>
+    <script src="../scripts/popup.js"></script>
   </body>
 </html>
