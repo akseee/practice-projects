@@ -4,8 +4,8 @@ const popup = document.querySelector(".popup")
 const closeButton = document.querySelector(".popup__close-btn")
 
 function petsTemplate(id, data) {
-  const cardTemplate = document.querySelector(id).content
-  const card = document.querySelector(".pets__list")
+  const cardTemplate = document.querySelector("#items-template").content
+  const card = document.querySelector(id)
 
   const cardElement = cardTemplate
     .querySelector(".pets__list-item")
@@ -67,5 +67,5 @@ closeButton.addEventListener("click", () => {
 })
 
 for (let i = 0; i < 3; i++) {
-  petsTemplate("#main__item-template", pets[i])
+  petsTemplate(".main-pets__list", pets[i])
 }

@@ -183,7 +183,7 @@
   gap: 53px;
 }
 
-.pets__list {
+.main-pets__list {
   display: flex;
   flex-direction: row;
   gap: 90px;
@@ -476,7 +476,7 @@
     gap: 12px;
   }
 
-  .pets__list {
+  .main-pets__list {
     gap: 40px;
   }
 
@@ -674,7 +674,7 @@
     gap: 20px 80px;
   }
 
-  .pets__list {
+  .main-pets__list {
     grid-column: 1/-1;
     grid-row: 1 / 2;
   }
