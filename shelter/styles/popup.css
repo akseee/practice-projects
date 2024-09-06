@@ -25,15 +25,10 @@
   padding: 18px;
   font-size: 0;
 }
+
 .popup__close-btn svg {
   width: 12px;
   height: 12px;
-}
-
-.popup {
-}
-
-.popup__type_card {
 }
 
 .popup__container {
@@ -73,6 +68,7 @@
 .popup__type {
   font-size: 20px;
   line-height: 23px;
+  letter-spacing: 0.06em;
 }
 
 .popup__description {
@@ -95,4 +91,61 @@
 }
 .popup__list-item::marker {
   color: #f1cdb3;
+}
+
+@media (width < 1280px) {
+  .popup__container {
+    max-width: 630px;
+    max-height: 350px;
+  }
+
+  .popup__image {
+    min-width: 350px;
+  }
+
+  .popup__info {
+    gap: 19px;
+    padding: 10px 9px 0;
+  }
+
+  .popup__description {
+    font-size: 13px;
+    line-height: 14.3px;
+    letter-spacing: 0.06em;
+  }
+
+  .popup__list {
+    gap: 6px;
+  }
+}
+
+@media (width < 780px) {
+  .popup__container {
+    position: relative;
+    display: block;
+    max-width: 240px;
+    max-height: 340px;
+    border-radius: 9px;
+    background-color: #fafafa;
+  }
+  .popup__close-btn {
+    right: -30px;
+  }
+
+  .popup__image {
+    display: none;
+  }
+
+  .popup__info {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .popup__header {
+    text-align: center;
+  }
+
+  .popup__description {
+    text-align: justify;
+  }
 }
