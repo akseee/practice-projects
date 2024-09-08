@@ -7,9 +7,23 @@
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 908px;
+  height: 100%;
   background: url("../images/noise_transparent@2x.png") repeat,
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
+}
+
+.main__hero {
+  position: relative;
+}
+
+.main__hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url("../images/noise_transparent@2x.png") repeat,
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
 }
 
 .header__info.content {
@@ -40,16 +54,17 @@
   text-align: right;
 }
 
-.header__nav {
-  color: #cdcdcd;
-  font-size: 15px;
-}
-
 .header__burger {
   display: none;
   border: none;
   outline: none;
   background-color: transparent;
+  transition: all 0.3s;
+}
+
+.header__nav {
+  color: #cdcdcd;
+  font-size: 15px;
 }
 
 .header__nav-list {
@@ -168,10 +183,23 @@
   gap: 53px;
 }
 
-.pets__list {
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.main-pets__list {
+  position: relative;
+  left: -1080px;
   display: flex;
   flex-direction: row;
   gap: 90px;
+  width: 990px;
+}
+
+.cards {
+  display: flex;
+  gap: 90px;
+  transition: transform 1s ease-in-out;
 }
 
 .pets__list-item {
@@ -181,6 +209,7 @@
 
 .pets__list-item:hover {
   box-shadow: 0 0 20px var(--accent-primary-light);
+  cursor: pointer;
 }
 
 .pets__list-item:hover .pets-item-button {
@@ -195,6 +224,7 @@
   gap: 30px;
   padding-bottom: 30px;
 }
+
 .pets-item-title {
   color: #545454;
   font-weight: 400;
@@ -415,10 +445,6 @@
 }
 
 @media (width < 1280px) {
-  .header::before {
-    height: 1165px;
-  }
-
   .content {
     max-width: 768px;
   }
@@ -464,12 +490,13 @@
     gap: 12px;
   }
 
-  .pets__list {
+  .main-pets__list {
     gap: 40px;
+    width: 580px;
   }
 
-  .pets__list-item:nth-child(3) {
-    display: none;
+  .cards {
+    gap: 40px;
   }
 
   .help-content.content {
@@ -530,10 +557,6 @@
     padding: 41px 10px;
   }
 
-  .header::before {
-    height: 823px;
-  }
-
   .header__info.content {
     padding: 30px 20px 0;
   }
@@ -542,8 +565,44 @@
     display: none;
   }
 
+  .header__sidebar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    gap: 173px;
+    width: 320px;
+    padding: 248px 20px 0;
+    color: #cdcdcd;
+    background: #292929;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(320px);
+  }
+
+  .header__sidebar-menu.active {
+    transform: translateX(0);
+  }
+
   .header__burger {
+    z-index: 3;
     display: block;
+    text-align: end;
+  }
+
+  .header__burger:hover {
+    cursor: pointer;
+  }
+
+  .header__burger.active {
+    transform: rotate(90deg);
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    gap: 40px;
+    font-size: 32px;
+    text-align: center;
   }
 
   .header__burger svg {
@@ -625,26 +684,18 @@
   }
 
   .pets__slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 80px;
   }
 
+  .slider__wrapper {
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
+  }
+
   .slider__back-button {
-    order: 2;
-  }
-
-  .slider__forward-button {
-    order: 3;
-  }
-
-  .pets__list-item:nth-child(2) {
-    display: none;
-  }
-  .pets__list-item:nth-child(3) {
-    display: none;
+    justify-self: flex-end;
   }
 
   .help-content {

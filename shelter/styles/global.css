@@ -86,3 +86,27 @@ p {
   border-color: var(--accent-primary);
   background-color: var(--accent-primary);
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+  opacity: 1;
+  background-color: #29292999;
+}
+
+button:disabled {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+  cursor: default;
+  pointer-events: none;
+}
