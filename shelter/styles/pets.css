@@ -393,6 +393,7 @@
   }
 
   .pets__list {
+    flex-direction: column;
     padding-bottom: 0;
   }
 
