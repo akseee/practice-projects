@@ -19,7 +19,7 @@ const rightSection = document.getElementById("cards-right")
 let petsList = shuffleArray(pets)
 
 petsList.forEach((item) => {
-  item.img.slice(1)
+  item.img = item.img.replace(/^\./, "")
 })
 
 if (petsList.length < 9) {
