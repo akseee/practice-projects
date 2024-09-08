@@ -103,3 +103,10 @@ p {
   opacity: 1;
   background-color: #29292999;
 }
+
+button:disabled {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+  cursor: default;
+  pointer-events: none;
+}

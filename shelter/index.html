@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/popup.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body>
     <div class="overlay visually-hidden" id="overlay"></div>
@@ -118,7 +119,13 @@
                 <use href="./images/svg/arror-left.svg#arrow-left"></use>
               </svg>
             </button>
-            <ul class="main-pets__list"></ul>
+            <div class="slider__wrapper">
+              <ul class="main-pets__list">
+                <ul class="cards" id="cards-left"></ul>
+                <ul class="cards" id="cards-central"></ul>
+                <ul class="cards" id="cards-right"></ul>
+              </ul>
+            </div>
             <button class="button slider-button slider__forward-button">
               <svg viewBox="0 0 14 6">
                 <use href="./images/svg/arror-right.svg#arrow-right"></use>
@@ -328,9 +335,10 @@
       </div>
     </div>
 
+    <script src="./scripts/contants.js"></script>
     <script src="./scripts/pets-list.js"></script>
     <script src="./scripts/burger-menu.js"></script>
-    <script src="./scripts/pets-main.js"></script>
     <script src="./scripts/popup.js"></script>
+    <script src="./scripts/main-slider.js"></script>
   </body>
 </html>

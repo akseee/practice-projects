@@ -1,5 +1,3 @@
-const page = "main"
-
 const popup = document.querySelector(".popup")
 const closeButton = document.querySelector(".popup__close-btn")
 
@@ -65,11 +63,3 @@ popup.addEventListener("click", (e) => {
 closeButton.addEventListener("click", () => {
   closePopup()
 })
-
-// for (let i = 0; i < 3; i++) {
-//   petsTemplate(".main-pets__list", "#main-pets-template", pets[i])
-// }
-
-for (let i = 0; i < 8; i++) {
-  petsTemplate(".pets__list", "#pets-template", pets[i])
-}
