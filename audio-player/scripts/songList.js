@@ -1,15 +1,6 @@
 const songsList = [
   {
-    bg: "#c9bea28f",
-    artist: "sickick",
-    songName: "talking to the moon (bruno mars remix)",
-    files: {
-      song: "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/1/song.mp3",
-      cover:
-        "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/1/img.jpg",
-    },
-  },
-  {
+    like: false,
     bg: "#0896eba1",
     artist: "bless you",
     songName: "driving",
@@ -20,16 +11,7 @@ const songsList = [
     },
   },
   {
-    bg: "#ebbe03",
-    artist: "lil uzi vert",
-    songName: "demon high",
-    files: {
-      song: "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/3/song.mp3",
-      cover:
-        "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/3/img.jpg",
-    },
-  },
-  {
+    like: true,
     bg: "#ffc382",
     artist: "travis scott",
     songName: "a man",
@@ -40,6 +22,31 @@ const songsList = [
     },
   },
   {
+    like: false,
+    bg: "#c9bea28f",
+    artist: "sickick",
+    songName: "talking to the moon (bruno mars remix)",
+    files: {
+      song: "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/1/song.mp3",
+      cover:
+        "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/1/img.jpg",
+    },
+  },
+
+  {
+    like: false,
+    bg: "#ebbe03",
+    artist: "lil uzi vert",
+    songName: "demon high",
+    files: {
+      song: "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/3/song.mp3",
+      cover:
+        "https://raw.githubusercontent.com/abxlfazl/music-player-widget/main/src/assets/media/songs/3/img.jpg",
+    },
+  },
+
+  {
+    like: false,
     bg: "#ffcbdc",
     artist: "randall",
     songName: "waharan",
@@ -50,6 +57,7 @@ const songsList = [
     },
   },
   {
+    like: true,
     bg: "#44c16fb5",
     artist: "tritonal",
     songName: "diamonds (feat. rose darling)",
@@ -60,6 +68,7 @@ const songsList = [
     },
   },
   {
+    like: false,
     bg: "#ff4545",
     artist: "the weeknd",
     songName: "blinding lights",
@@ -70,6 +79,7 @@ const songsList = [
     },
   },
   {
+    like: false,
     bg: "#e5e7e9",
     artist: "arizona zervas",
     songName: "no i in team",
