@@ -1,7 +1,8 @@
 body {
-  color: var(--dark-main-text-color);
+  color: white;
   font-family: sans-serif;
-  background-color: var(--dark-bg-color);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .player-content {
@@ -21,7 +22,8 @@ body {
 .audioplayer-container {
   margin: 0 auto;
   border-radius: 20px;
-  box-shadow: 0 50px 80px var(--dark-bg-color-lighter);
+  box-shadow: 0 50px 80px rgba(255, 54, 54, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .audioplayer {
@@ -35,12 +37,12 @@ body {
 .audioplayer-img {
   width: 150px;
   border-radius: 50%;
-  box-shadow: 0 100px 200px black;
+  box-shadow: 0 100px 200px rgb(255, 0, 0);
 }
 
 .audioplayer-img img {
   border-radius: 50%;
-  box-shadow: 0 0 100px white;
+  box-shadow: 0 0 100px rgb(0, 0, 255);
 }
 
 .audioplayer-current-song {
@@ -54,7 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: var(--accent-color-dark);
+  color: var(--color-dark);
 }
 
 .like svg {
@@ -66,7 +68,7 @@ body {
 }
 
 .like:hover svg {
-  fill: var(--accent-color-dark);
+  fill: var(--color-dark);
   transform: scale(1.3);
 }
 
@@ -75,28 +77,36 @@ body {
 }
 
 .like.active svg path {
-  fill: var(--accent-color-dark);
+  fill: var(--color-dark);
 }
 
 .volume.active svg {
   opacity: 0.2;
 }
 
-.control {
-  color: var(--accent-color-dark);
+.audioplayer-controls {
+  display: flex;
+  gap: 1em;
+  width: 100%;
 }
 
-.control svg {
-  width: 2em;
-  height: 2em;
-  border: 2px solid var(--dark-bg-color-lighter);
-  border-radius: 50%;
-  padding: 0.5em;
+.control {
+  opacity: 0.7;
+  color: var(--color-dark);
   transition: all 0.3s ease-in-out;
 }
 
-.control:hover svg {
-  background-color: var(--dark-bg-color-lighter);
+.control:hover {
+  opacity: 1;
+}
+.control svg {
+  width: 2em;
+  height: 2em;
+  border: 2px solid var(--color-light);
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: var(--color-light);
+  transition: all 0.3s ease-in-out;
 }
 
 .control:active svg {
@@ -121,7 +131,7 @@ input[type="range"] {
   height: 0.5em;
   margin: 0;
   border-radius: 0.5em;
-  background: var(--accent-color-light);
+  background: var(--color-light);
   -webkit-appearance: none;
   appearance: none;
 }
@@ -129,17 +139,11 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   width: 1em;
   height: 1em;
-  border: 3px solid var(--accent-color-light);
+  border: 3px solid var(--color-light);
   border-radius: 50%;
-  background-color: var(--accent-color-dark);
+  background-color: var(--color-dark);
   -webkit-appearance: none;
   appearance: none;
-}
-
-.audioplayer-controls {
-  display: flex;
-  gap: 1em;
-  width: 100%;
 }
 
 .footer {
@@ -159,7 +163,7 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   justify-content: space-between;
   margin: 0 6em;
-  color: var(--accent-color-light);
+  color: var(--color-dark);
   font-size: 1.5em;
 }
 

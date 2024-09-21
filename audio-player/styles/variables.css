@@ -1,7 +1,5 @@
 :root {
-  --dark-bg-color: #33313e;
-  --dark-bg-color-lighter: #48445b;
-  --dark-main-text-color: #f4f4f4;
-  --accent-color-light: #fe9c83;
-  --accent-color-dark: #fa5d3a;
+  --bg-color: #4a4a4b;
+  --color-light: rgb(200, 200, 200);
+  --color-dark: rgb(30, 30, 30);
 }
