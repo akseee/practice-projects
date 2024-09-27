@@ -1,0 +1,75 @@
+@keyframes move-right {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+
+@keyframes move-left {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@media (width < 1280px) {
+  @keyframes move-right {
+    from {
+      left: -620px;
+    }
+    to {
+      left: -1240px;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      left: -620px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .main-pets__list {
+    left: -620px;
+  }
+}
+
+@media (width < 768px) {
+  @keyframes move-right {
+    from {
+      left: -300px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      left: -300px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .main-pets__list {
+    left: -300px;
+    width: 290px;
+  }
+}
