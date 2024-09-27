@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image-gallery</title>
+    <link rel="icon" href="./assets/favicon-ico.svg" sizes="any" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__content">
+        <h1 class="header__title">Image Gallery</h1>
+        <div class="header__label">
+          <label class="label" for="search">
+            <input
+              class="header__search"
+              autocomplete="off"
+              type="search"
+              id="search"
+              placeholder="You can find anything here!"
+            />
+          </label>
+          <button class="search-btn">
+            <img src="./assets//search-icon.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <ul class="gallery-list" id="gallery"></ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="link">
+          <a href="https://github.com/akseee">Github, 2024</a>
+        </div>
+        <a href="https://rs.school/courses/javascript-preschool-ru">
+          <img src="./assets/logo-rsschool3.png" alt="logo" class="logo"
+        /></a>
+      </div>
+    </footer>
+    <template id="template-image">
+      <li class="gallery-list__item">
+        <img class="gallery-image" src="./assets/image.png" alt="" />
+      </li>
+    </template>
+    <script src="scirpts/script.js"></script>
+  </body>
+</html>
