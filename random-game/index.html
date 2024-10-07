@@ -12,13 +12,13 @@
     <header class="header">
       <h1 class="title" aria-label="battleship">
         <pre aria-hidden="true">
-          ██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗
-          ██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗
-          ██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝
-          ██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝
-          ██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║
-          ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝
-        </pre>
+██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗
+██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗
+██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝
+██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝
+██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║
+╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝</pre
+        >
       </h1>
       <nav class="header-nav">
         <button class="rules nav-btn border" type="button">rules</button>
@@ -30,96 +30,101 @@
     </header>
 
     <main class="main dotted-light game">
+      <section class="cover-screen border visually-hidden">
+        <button class="start-game border">play</button>
+        <h2 class="cover-title"></h2>
+        <p><span class="time cover-time"></span></p>
+      </section>
       <section class="status border">
         <span class="status-text">
           Place the ships on the field on the first field</span
         ><span class="time status-timer">0:00</span>
       </section>
+
       <section class="field">
-        <form class="board game-board friendly">
-          <button class="cell"></button>
-        </form>
-        <form class="board game-board enemy">
-          <button class="cell"></button>
-        </form>
+        <form class="board game-board friendly"></form>
+        <form class="board game-board enemy"></form>
       </section>
+
       <section class="fleet board">
-        <div class="fleet-amount">
-          <div class="ship">
+        <button class="randomizer border">randomize</button>
+        <ul class="fleet-amount">
+          <li class="ship-type ship-type-first ship">
             <span class="cell amount">1</span>
             <form class="fleet-ship">
               <button class="cell ship"></button>
             </form>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship-type ship-type-second ship">
             <span class="cell amount">1</span>
             <form class="fleet-ship">
               <button class="cell ship"></button>
               <button class="cell ship"></button>
             </form>
-          </div>
-          <div class="ship">
-            <span class="cell amount">1</span>
-            <form class="fleet-ship">
-              <button class="cell ship"></button>
-              <button class="cell ship"></button>
-              <button class="cell ship"></button>
-            </form>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship-type ship-type-third ship">
             <span class="cell amount">1</span>
             <form class="fleet-ship">
               <button class="cell ship"></button>
               <button class="cell ship"></button>
               <button class="cell ship"></button>
-              <button class="cell ship"></button>
             </form>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship-type ship-type-fourth ship">
             <span class="cell amount">1</span>
             <form class="fleet-ship">
               <button class="cell ship"></button>
               <button class="cell ship"></button>
               <button class="cell ship"></button>
               <button class="cell ship"></button>
+            </form>
+          </li>
+          <li class="ship-type ship-type-fifth ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
               <button class="cell ship"></button>
             </form>
-          </div>
-        </div>
-        <div class="fleet-types">
-          <div class="ship">
+          </li>
+        </ul>
+        <ul class="fleet-types">
+          <li class="ship">
             <form class="fleet-ship">
               <button class="cell ship"></button>
             </form>
             <span class="cell type">ship</span>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship">
             <form class="fleet-ship">
               <button class="cell sink"></button>
             </form>
             <span class="cell type">sink</span>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship">
             <form class="fleet-ship">
               <button class="cell hit"></button>
             </form>
             <span class="cell type">hit</span>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship">
             <form class="fleet-ship">
               <button class="cell miss"></button>
             </form>
             <span class="cell type">miss</span>
-          </div>
-          <div class="ship">
+          </li>
+          <li class="ship">
             <form class="fleet-ship">
               <button class="cell"></button>
             </form>
             <span class="cell type">empty</span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </main>
+
     <footer class="footer">
       <div class="link">
         <a href="https://github.com/akseee">
@@ -197,11 +202,17 @@
         </div>
       </div>
     </div>
+
+    <template id="cell-template">
+      <button class="cell" data-row="" data-col=""></button>
+    </template>
+
     <script
       src="./scripts/index.js
     "
       defer
     ></script>
+    <script src="./scripts/index.js"></script>
     <script src="./scripts/popup.js"></script>
   </body>
 </html>

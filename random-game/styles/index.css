@@ -4,8 +4,16 @@
 }
 
 .board {
-  border: 3px solid var(--main-green);
+  border: 1px solid var(--main-green);
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.border {
+  border: 1px solid var(--main-green);
+  padding: 0.4em 1em;
+  color: #04ff00;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .page {
@@ -14,10 +22,9 @@
   justify-content: space-between;
   max-width: 1280px;
   height: 100vh;
-
   margin: 0 auto;
   color: white;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
   background: repeating-linear-gradient(
       90deg,
       #1a1a1a 0 2px,
@@ -31,7 +38,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 3em 3em 0;
+  padding: 0 3em;
 }
 
 .header-nav {
@@ -44,14 +51,7 @@
   color: var(--main-green);
   font-size: 0.6em;
   text-shadow: 1px 1px 2px var(--main-green);
-}
-
-.border {
-  border: 1px solid var(--main-green);
-  padding: 0.4em 1em;
-  color: #04ff00;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.5s ease-in-out;
+  white-space: pre;
 }
 
 .nav-btn {
@@ -64,12 +64,41 @@
 }
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2em;
-  padding: 3em 3em 0;
+  padding: 1em 3em;
 }
+
+/* cover */
+
+.cover-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-top: 4em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.start-game {
+  font-size: 2em;
+}
+
+.cover-title {
+  color: white;
+}
+
+.start-game:hover {
+  color: black;
+  background-color: white;
+}
+
+/* status */
 
 .status {
   display: flex;
@@ -83,27 +112,22 @@
   font-weight: 800;
 }
 
+/* fields */
+
 .field {
   display: flex;
   justify-content: space-around;
-  gap: 1em;
+  gap: 2em;
+  padding: 1em;
 }
 
 .game-board {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  width: 256px;
-  height: 256px;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  min-height: fit-content;
-  margin: 3em 5em 0;
-  color: white;
-  font-size: 4px;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: #000;
 }
 
 /* ship types */
@@ -112,12 +136,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 25px;
-  min-height: 25px;
+  min-width: 28px;
+  min-height: 29px;
   border: 1px solid var(--main-green);
 }
 
+.game-board .cell:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .cell.ship {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -158,11 +189,21 @@
 /* ship set up */
 
 .fleet {
-  display: flex;
-  justify-content: space-between;
-  gap: 4em;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  gap: 2em;
   height: fit-content;
   padding: 1em;
+}
+
+.randomizer {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.randomizer:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.596);
 }
 
 .fleet-amount {
@@ -195,20 +236,34 @@
   display: flex;
 }
 
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: fit-content;
+  margin: 3em 5em 0;
+  color: white;
+  font-size: 4px;
+}
+
 @media (max-width: 768px) {
+  .page {
+    min-width: 375px;
+  }
   .header {
     flex-direction: column;
   }
-}
-
-@media (max-width: 600px) {
   .field {
     flex-direction: column;
     align-items: center;
   }
 
   .fleet {
-    flex-direction: column;
-    gap: 3em;
+    grid-template-columns: 1fr;
+  }
+
+  .randomizer {
+    writing-mode: horizontal-tb;
   }
 }
