@@ -3,8 +3,18 @@
   --light-green: #04ff004f;
 }
 
+.board {
+  border: 3px solid var(--main-green);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1280px;
+  height: 100vh;
+
   margin: 0 auto;
   color: white;
   font-family: monospace;
@@ -14,14 +24,13 @@
       transparent 2px 4px
     ),
     repeating-linear-gradient(180deg, #1a1a1a 0 2px, transparent 2px 4px),
-    linear-gradient(180deg, #000000 15%, var(--main-green) 100%) fixed center /
-      cover;
+    linear-gradient(180deg, #000000 15%, var(--main-green) 90%, white 100%)
+      fixed center / cover;
 }
 
 .header {
   display: flex;
   align-items: center;
-  width: 100%;
   padding: 3em 3em 0;
 }
 
@@ -57,23 +66,27 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2em;
   padding: 3em 3em 0;
 }
 
 .status {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
   width: 100%;
+}
+
+.status-text {
+  color: white;
+  font-weight: 800;
 }
 
 .field {
   display: flex;
   justify-content: space-around;
   gap: 1em;
-}
-
-.board {
-  border: 3px solid var(--main-green);
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .game-board {
@@ -84,14 +97,24 @@
   height: 256px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: fit-content;
+  margin: 3em 5em 0;
+  color: white;
+  font-size: 4px;
+}
+
 /* ship types */
+
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 25px;
   min-height: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.281);
+  border: 1px solid var(--main-green);
 }
 
 .cell.ship {
@@ -100,6 +123,7 @@
 
 .cell.ship::after {
   content: "\26F4";
+  color: white;
 }
 
 .cell.miss::after {
@@ -121,9 +145,6 @@
   color: var(--main-green);
 }
 
-.cell.empty {
-}
-
 .cell.sink {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.5);
@@ -138,9 +159,27 @@
 
 .fleet {
   display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  height: fit-content;
+  padding: 1em;
+}
+
+.fleet-amount {
+  display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 1em;
+}
+
+.fleet-types {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.type.cell {
+  width: 100%;
+  padding: 0 1em;
 }
 
 .ship {
@@ -166,5 +205,10 @@
   .field {
     flex-direction: column;
     align-items: center;
+  }
+
+  .fleet {
+    flex-direction: column;
+    gap: 3em;
   }
 }

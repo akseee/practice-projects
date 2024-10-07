@@ -68,3 +68,9 @@
 .time {
   color: var(--main-green);
 }
+
+@media (max-width: 768px) {
+  .popup__list.rules {
+    font-size: 1em;
+  }
+}
