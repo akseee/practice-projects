@@ -1,0 +1,170 @@
+:root {
+  --main-green: #04ff00;
+  --light-green: #04ff004f;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+  font-family: monospace;
+  background: repeating-linear-gradient(
+      90deg,
+      #1a1a1a 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #1a1a1a 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #000000 15%, var(--main-green) 100%) fixed center /
+      cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3em 3em 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title {
+  color: var(--main-green);
+  font-size: 0.6em;
+  text-shadow: 1px 1px 2px var(--main-green);
+}
+
+.border {
+  border: 1px solid var(--main-green);
+  padding: 0.4em 1em;
+  color: #04ff00;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.nav-btn {
+  text-transform: uppercase;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: scale(1.2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 3em 3em 0;
+}
+
+.status {
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.board {
+  border: 3px solid var(--main-green);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 256px;
+  height: 256px;
+}
+
+/* ship types */
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25px;
+  min-height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.cell.ship {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cell.ship::after {
+  content: "\26F4";
+}
+
+.cell.miss::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.cell.hit {
+  background-color: var(--light-green);
+}
+
+.cell.hit::after {
+  content: "\00d7";
+  display: block;
+  color: var(--main-green);
+}
+
+.cell.empty {
+}
+
+.cell.sink {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cell.sink::after {
+  content: "\00d7";
+  color: white;
+}
+
+/* ship set up */
+
+.fleet {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.ship {
+  display: flex;
+  gap: 4em;
+}
+
+.ship:active .fleet-ship {
+  transform: scale(1.2);
+}
+
+.fleet-ship {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .field {
+    flex-direction: column;
+    align-items: center;
+  }
+}
