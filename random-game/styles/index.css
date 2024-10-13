@@ -1,0 +1,269 @@
+:root {
+  --main-green: #04ff00;
+  --light-green: #04ff004f;
+}
+
+.board {
+  border: 1px solid var(--main-green);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.border {
+  border: 1px solid var(--main-green);
+  padding: 0.4em 1em;
+  color: #04ff00;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  background: repeating-linear-gradient(
+      90deg,
+      #1a1a1a 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #1a1a1a 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #000000 15%, var(--main-green) 90%, white 100%)
+      fixed center / cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title {
+  color: var(--main-green);
+  font-size: 0.6em;
+  text-shadow: 1px 1px 2px var(--main-green);
+  white-space: pre;
+}
+
+.nav-btn {
+  text-transform: uppercase;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: scale(1.2);
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 3em;
+}
+
+/* cover */
+
+.cover-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-top: 4em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.start-game {
+  font-size: 2em;
+}
+
+.cover-title {
+  color: white;
+}
+
+.start-game:hover {
+  color: black;
+  background-color: white;
+}
+
+/* status */
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+}
+
+.status-text {
+  color: white;
+  font-weight: 800;
+}
+
+/* fields */
+
+.field {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  padding: 1em;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  min-width: 300px;
+  min-height: 300px;
+  background-color: #000;
+}
+
+/* ship types */
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  min-height: 29px;
+  border: 1px solid var(--main-green);
+}
+
+.game-board .cell:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cell.ship {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cell.ship::after {
+  content: "\26F4";
+  color: white;
+}
+
+.cell.miss::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.cell.hit {
+  background-color: var(--light-green);
+}
+
+.cell.hit::after {
+  content: "\00d7";
+  display: block;
+  color: var(--main-green);
+}
+
+.cell.sink {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cell.sink::after {
+  content: "\00d7";
+  color: white;
+}
+
+/* ship set up */
+
+.fleet {
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  gap: 2em;
+  height: fit-content;
+  padding: 1em;
+}
+
+.randomizer {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.randomizer:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.596);
+}
+
+.fleet-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.fleet-types {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.type.cell {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.ship {
+  display: flex;
+  gap: 4em;
+}
+
+.ship:active .fleet-ship {
+  transform: scale(1.2);
+}
+
+.fleet-ship {
+  display: flex;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: fit-content;
+  margin: 3em 5em 0;
+  color: white;
+  font-size: 4px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    min-width: 375px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .field {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fleet {
+    grid-template-columns: 1fr;
+  }
+
+  .randomizer {
+    writing-mode: horizontal-tb;
+  }
+}

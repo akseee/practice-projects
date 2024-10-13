@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random-game</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/popup.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="title" aria-label="battleship">
+        <pre aria-hidden="true">
+██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗
+██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗
+██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝
+██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝
+██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║
+╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝</pre
+        >
+      </h1>
+      <nav class="header-nav">
+        <button class="rules nav-btn border" type="button">rules</button>
+        <button class="new-game nav-btn border" type="button">new game</button>
+        <button class="leaderboard nav-btn border" type="button">
+          leaderboard
+        </button>
+      </nav>
+    </header>
+
+    <main class="main dotted-light game">
+      <section class="cover-screen border visually-hidden">
+        <button class="start-game border">play</button>
+        <h2 class="cover-title"></h2>
+        <p><span class="time cover-time"></span></p>
+      </section>
+      <section class="status border">
+        <span class="status-text"> The game is still in production</span
+        ><span class="time status-timer">0:00</span>
+      </section>
+
+      <section class="field">
+        <form class="board game-board friendly"></form>
+        <form class="board game-board enemy"></form>
+      </section>
+
+      <section class="fleet board">
+        <button class="randomizer border">randomize</button>
+        <ul class="fleet-amount">
+          <li class="ship-type ship-type-first ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+            </form>
+          </li>
+          <li class="ship-type ship-type-second ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+            </form>
+          </li>
+          <li class="ship-type ship-type-third ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+            </form>
+          </li>
+          <li class="ship-type ship-type-fourth ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+            </form>
+          </li>
+          <li class="ship-type ship-type-fifth ship">
+            <span class="cell amount">1</span>
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+              <button class="cell ship"></button>
+            </form>
+          </li>
+        </ul>
+        <ul class="fleet-types">
+          <li class="ship">
+            <form class="fleet-ship">
+              <button class="cell ship"></button>
+            </form>
+            <span class="cell type">ship</span>
+          </li>
+          <li class="ship">
+            <form class="fleet-ship">
+              <button class="cell sink"></button>
+            </form>
+            <span class="cell type">sink</span>
+          </li>
+          <li class="ship">
+            <form class="fleet-ship">
+              <button class="cell hit"></button>
+            </form>
+            <span class="cell type">hit</span>
+          </li>
+          <li class="ship">
+            <form class="fleet-ship">
+              <button class="cell miss"></button>
+            </form>
+            <span class="cell type">miss</span>
+          </li>
+          <li class="ship">
+            <form class="fleet-ship">
+              <button class="cell"></button>
+            </form>
+            <span class="cell type">empty</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="link">
+        <a href="https://github.com/akseee">
+          <pre>
+██████   ██ ████████ ██   ██ ██    ██ ██████         ██████   ██████  ██████  ██   ██
+██       ██    ██    ██   ██ ██    ██ ██   ██             ██ ██  ████      ██ ██   ██
+██   ███ ██    ██    ███████ ██    ██ ██████          █████  ██ ██ ██  █████  ███████
+██    ██ ██    ██    ██   ██ ██    ██ ██   ██        ██      ████  ██ ██           ██
+ ██████  ██    ██    ██   ██  ██████  ██████  ▄█     ███████  ██████  ███████      ██
+          </pre>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://rs.school/courses/javascript-preschool-ru">
+          <pre>
+██████  ███████
+██   ██ ██
+██████  ███████
+██   ██      ██
+██   ██ ███████
+           </pre
+          >
+        </a>
+      </div>
+    </footer>
+
+    <div class="popup popup__type_rules">
+      <div class="popup__container">
+        <button class="popup__close-btn">x</button>
+        <div class="popup__info">
+          <h2 class="popup__title">battleship rules:</h2>
+          <ul class="popup__list rules">
+            <li class="popup__list-item rules">
+              fach player places 5 ships on their grid.
+            </li>
+            <li class="popup__list-item rules">
+              players take turns guessing opponent's ship locations.
+            </li>
+            <li class="popup__list-item rules">
+              mark hits and misses on your grid.
+            </li>
+            <li class="popup__list-item rules">
+              a ship is sunk when all its parts are hit.
+            </li>
+            <li class="popup__list-item rules">
+              first to sink all opponent's ships wins.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup__type_leaderboard">
+      <div class="popup__container">
+        <button class="popup__close-btn">x</button>
+        <div class="popup__info">
+          <h2 class="popup__title">battleship leaderboard:</h2>
+          <ul class="popup__list leaderboard">
+            <li class="popup__list-item leaderboard">
+              1. Alise <span class="time">3:42</span>
+            </li>
+            <li class="popup__list-item leaderboard">
+              2. Alise <span class="time">3:42</span>
+            </li>
+            <li class="popup__list-item leaderboard">
+              3. Alise <span class="time">3:42</span>
+            </li>
+            <li class="popup__list-item leaderboard">
+              4. Alise <span class="time">3:42</span>
+            </li>
+            <li class="popup__list-item leaderboard">
+              5. Alise <span class="time">3:42</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <template id="cell-template">
+      <button class="cell" data-row="" data-col=""></button>
+    </template>
+
+    <script
+      src="./scripts/index.js
+    "
+      defer
+    ></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/popup.js"></script>
+  </body>
+</html>
